@@ -8,6 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { LotofacilComponent } from './pages/lotofacil/lotofacil.component';
 import { SnakeComponent } from './pages/snake/snake.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { WilliamComponent } from './pages/william/william.component';
 
 const routes: Routes = [
   { path: 'galery', component: GaleryComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'fiis', component: FiisComponent },
   { path: 'cats', component: CatListComponent },
   { path: 'categories', component: CategoriesComponent },
+  { path: 'william', component: WilliamComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 

@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CatListComponent } from './cat-list/cat-list.component';
 import { CategoriesComponent } from './categories/categories.component';
 import {MatCardModule} from '@angular/material/card';
+import { WilliamComponent } from './william/william.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatCardModule} from '@angular/material/card';
     LotomaniaComponent,
     FiisComponent,
     CatListComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    WilliamComponent
   ],
   imports: [
     CommonModule,
