@@ -144,7 +144,7 @@
   "deploy": {
     "builder": "angular-cli-ghpages:deploy",
     "options": {
-      "baseHref": "https://williammoura.github.io/",
+      "baseHref": "https://william-moura.github.io/",
       "name": "Angular Schule Team",
       "email": "williammoura908@gmail.com"
     }
