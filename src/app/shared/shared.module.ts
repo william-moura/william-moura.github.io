@@ -12,9 +12,9 @@ import { GaleryComponent } from '../galery/galery.component';
 import { CardItemComponent } from './card-item/card-item.component';
 import { NavComponent } from './nav/nav.component';
 import { ModalAdicionarComponent } from './modal-adicionar/modal-adicionar.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

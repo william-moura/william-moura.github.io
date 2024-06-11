@@ -12,7 +12,7 @@ import { FiisComponent } from './fiis/fiis.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CatListComponent } from './cat-list/cat-list.component';
 import { CategoriesComponent } from './categories/categories.component';
-import {MatCardModule} from '@angular/material/card';
+import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
 import { WilliamComponent } from './william/william.component';
 
 @NgModule({
