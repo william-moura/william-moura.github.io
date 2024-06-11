@@ -9,31 +9,25 @@ import { OnlyNumberDirective } from './../directives/only-number.directive';
 import {MatIconModule} from '@angular/material/icon';
 import { LotomaniaComponent } from './lotomania/lotomania.component';
 import { FiisComponent } from './fiis/fiis.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { CatListComponent } from './cat-list/cat-list.component';
 import { CategoriesComponent } from './categories/categories.component';
 import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
 import { WilliamComponent } from './william/william.component';
 
-@NgModule({
-  declarations: [
-    AboutComponent,
-    SnakeComponent,
-    LotofacilComponent,
-    OnlyNumberDirective,
-    LotomaniaComponent,
-    FiisComponent,
-    CatListComponent,
-    CategoriesComponent,
-    WilliamComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    FormsModule,
-    MatIconModule,
-    HttpClientModule,
-    MatCardModule
-  ]
-})
+@NgModule({ declarations: [
+        AboutComponent,
+        SnakeComponent,
+        LotofacilComponent,
+        OnlyNumberDirective,
+        LotomaniaComponent,
+        FiisComponent,
+        CatListComponent,
+        CategoriesComponent,
+        WilliamComponent
+    ], imports: [CommonModule,
+        SharedModule,
+        FormsModule,
+        MatIconModule,
+        MatCardModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class PagesModule { }
