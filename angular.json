@@ -78,18 +78,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "williammoura:build"
+            "buildTarget": "william-moura:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "williammoura:build:production"
+              "buildTarget": "william-moura:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "williammoura:build"
+            "buildTarget": "william-moura:build"
           }
         },
         "test": {
@@ -138,7 +138,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://william-moura.github.io/",
+            "baseHref": "william-moura.github.io",
             "name": "Angular Schule Team",
             "email": "williammoura908@gmail.com",
             "repo": "https://github.com/william-moura/william-moura.github.io.git",
