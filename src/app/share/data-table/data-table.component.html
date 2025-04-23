@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let column of columns">
+                {{ column }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr>
+            <td>Teste</td>
+        </tr> -->
+        <tr *ngFor="let row of rows">
+            <td *ngFor="let column of columns">
+                {{ row[column] }}
+            </td>
+        </tr>
+    </tbody>
+</table>
