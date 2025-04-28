@@ -11,4 +11,5 @@ import { Component, Input } from '@angular/core';
 export class DataTableComponent {
   @Input() rows!: any[];
   @Input() columns!: string[];
+  @Input() title!: string;
 }
