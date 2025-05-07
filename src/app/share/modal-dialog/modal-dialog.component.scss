@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    margin-bottom: 10px;
+
+    label {
+        margin-right: 15px;
+    }
+}

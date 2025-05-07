@@ -1,2 +1,2 @@
 <app-data-table [columns]="columns" [rows]="rows" [title]="'Despesas'"></app-data-table>
-<app-modal-dialog></app-modal-dialog>
+<app-modal-dialog (dadosEnviados)="addExpense($event)"></app-modal-dialog>

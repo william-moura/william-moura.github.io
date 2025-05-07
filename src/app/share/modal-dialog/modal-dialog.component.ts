@@ -1,24 +1,27 @@
-import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, output, Output } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MoneyPipe } from '../../money.pipe';
 
 @Component({
   selector: 'app-modal-dialog',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, FormsModule, MoneyPipe],
   standalone: true,
   templateUrl: './modal-dialog.component.html',
   styleUrl: './modal-dialog.component.scss'
 })
 export class ModalDialogComponent {
-  // formModel = new FormControl('');
-  eventEmitter = new EventEmitter()
-  @Output() formModel :any = {
-    description: new FormControl(''),
-    value: new FormControl(''),
-    dueDate: new FormControl('')
+  @Output() dadosEnviados = new EventEmitter<any>();
+  formModel :any = {
+    description: '',
+    value: '',
+    dueDate: ''
   }
   public addExpense() {
-    console.log(this.formModel,'Adicionar despesa');
-    this.eventEmitter.emit(this.formModel);
+    this.dadosEnviados.emit(this.formModel);
+    this.formModel = {
+      description: '',
+      value: '',
+      dueDate: ''
+    }
   }
 }

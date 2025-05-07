@@ -17,7 +17,12 @@ export class ListExpensesComponent {
   ]
   objeto: object = {};
 
-  public addExpense() {
-    console.log('Adicionar despesa');
+  public addExpense(dados: any) {
+    
+    this.rows.push({
+      id: this.rows.length + 1,
+      name: dados.description,
+      amount: dados.value
+    });
   }
 }
