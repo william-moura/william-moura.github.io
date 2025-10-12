@@ -1,0 +1,17 @@
+nav {
+    background-color: silver;
+    color: #fff;
+    float: left;
+    & ul {
+        width: 100%;
+        & li {
+            padding: 15px;
+            list-style-type: none;
+            text-align: left;
+
+        }
+        & li:hover {
+            cursor: pointer;
+        }
+    }
+}

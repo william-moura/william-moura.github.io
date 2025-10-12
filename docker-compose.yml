@@ -1,0 +1,5 @@
+services:
+  app-app:
+    build: .
+  angular-web:
+    image: nginx:latest
