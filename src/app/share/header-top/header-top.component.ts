@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-top',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header-top.component.scss'
 })
 export class HeaderTopComponent {
-
+  @Input() profileImageUrl: string = 'assets/default-profile.png'; 
 }

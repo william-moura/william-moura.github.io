@@ -1,9 +1,51 @@
-header {
-    margin-top: 0px;
-    background-color: #000200;
-    color: #fff;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 4px;
-    width: 100%;
+$topbar-height: 60px;
+$topbar-bg: #ffffff;
+$profile-border-color: #3498db;
+
+.topbar {
+    height: $topbar-height;
+    background-color: $topbar-bg;
+    color: #333;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topbar-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-name {
+    font-size: 0.9em;
+    color: #666;
+    // Oculta em telas pequenas, se necessário
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid $profile-border-color;
+    transition: transform 0.2s;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
 }

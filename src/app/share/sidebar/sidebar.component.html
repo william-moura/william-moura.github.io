@@ -1,8 +1,10 @@
-<nav>
+<aside class="sidebar">
+    <h2>Menu</h2>
     <ul>
-        <li>Dashboard</li>
-        <li>Categorias</li>
-        <li>Receitas</li>
-        <li>Despesas</li>
+        <li><a [routerLink]="['/']" routerLinkActive="active">Início</a></li>
+        @for (item of routes; track $index) {
+            <li><a [routerLink]="item.path" routerLinkActive="">{{item.title}}</a></li>
+        }
+        <li><a [routerLink]="['/logout']">Sair</a></li>
     </ul>
-</nav>
+</aside>
